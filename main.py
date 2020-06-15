@@ -23,7 +23,7 @@ from torch.autograd import Variable
     
 
 def train(args):
-    device = torch.device("cuda:6")
+    device = torch.device("cuda:0")
     
     alphabet = getAlphabet(args.language)
     nclass = len(alphabet) + 1
